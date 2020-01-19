@@ -5,76 +5,130 @@
         <link href="../styles/app.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <header id="header">
-            <section class="header-section left">
-                <!-- <img src="" alt="Fav Fonts"/> -->
-                <h1>Fav Fonts</h1>
-            </section>
-            <section class="header-section right">
-                <a class="link" href="">CATALOG</a>
-                <a class="link" href="">FEATURES</a>
-                <a class="link" href="">ARTICLE</a>
-                <a class="link" href="">ABOUT</a>
-            </section>
-        </header>
-        <hr>
-        <nav class="navbar">
-            <input type="text"/>
-            <input type="text"/>
-            <div>
-                <button class="btn btn-dropdown">
-                    32px
-                    <ul class="menu">
-                        <li class="menu-item">16px</li>
-                        <li class="menu-item">24px</li>
-                        <li class="menu-item">32px</li>
-                        <li class="menu-item">40px</li>
-                    </ul>
-                </button>
+        <div id="wrapper">
+            <header id="header">
+                <section class="header-section left">
+                    <!-- <img src="" alt="Fav Fonts"/> -->
+                    <h1>Fav Fonts</h1>
+                </section>
+                <section class="header-section right">
+                    <a class="link" href="">CATALOG</a>
+                    <a class="link" href="">FEATURES</a>
+                    <a class="link" href="">ARTICLE</a>
+                    <a class="link" href="">ABOUT</a>
+                </section>
+            </header>
+            <hr>
+            <nav class="navbar">
+                <input id="font-search-box" type="text" placeholder="Search fonts">
+                <input id="font-text-ex-box" type="text" maxlength="200" placeholder="Type something..."/>
+                <div>
+                    <button class="btn btn-dropdown">
+                        32px
+                        <ul class="menu">
+                            <li class="menu-item">16px</li>
+                            <li class="menu-item">24px</li>
+                            <li class="menu-item">32px</li>
+                            <li class="menu-item">40px</li>
+                        </ul>
+                    </button>
+                </div>
+                <div id="night-mode-toggle">
+                    <button class="btn btn-circle black"></button>
+                    <button class="btn btn-circle"></button>
+                </div>
+                <button id="list-view-type" class="btn">grid</button>
+                <button id="reset" class="btn">Reset</button>
+            </nav>
+            <div id="main">
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <p class="font-text">Hello</p>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <p class="font-text">Hello</p>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <p class="font-text">Hello</p>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <p class="font-text">Hello</p>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <div class="font-text">Hello</div>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <div class="font-text">Hello</div>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <div class="font-text">Hello</div>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <div class="font-text">Hello</div>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <div class="font-text">Hello</div>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <div class="font-text">Hello</div>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <div class="font-text">Hello</div>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <div class="font-text">Hello</div>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <div class="font-text">Hello</div>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <div class="font-text">Hello</div>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <div class="font-text">Hello</div>
+                </div>
+                <div class="grid-item">
+                    <h3 class="font-name">Roboto</h3>
+                    <p class="font-author">Son Goku</p>
+                    <div class="font-text">Hello</div>
+                </div>
             </div>
-            <div>
-                <button class="btn btn-circle black"></button>
-                <button class="btn btn-circle"></button>
-            </div>
-            <button id="list-view-type" class="btn">grid</button>
-            <button id="reset" class="btn">Reset</button>
-        </nav>
-        <section id="main">
-            <div class="grid-item">
-                <h3 class="font-name">Roboto</h3>
-                <p class="font-author">Son Goku</p>
-                <div class="font-text">Hello</div>
-            </div>
-            <div class="grid-item">
-                <h3 class="font-name">Roboto</h3>
-                <p class="font-author">Son Goku</p>
-                <div class="font-text">Hello</div>
-            </div>
-            <div class="grid-item">
-                <h3 class="font-name">Roboto</h3>
-                <p class="font-author">Son Goku</p>
-                <div class="font-text">Hello</div>
-            </div>
-            <div class="grid-item">
-                <h3 class="font-name">Roboto</h3>
-                <p class="font-author">Son Goku</p>
-                <div class="font-text">Hello</div>
-            </div>
-            <div class="grid-item">
-                <h3 class="font-name">Roboto</h3>
-                <p class="font-author">Son Goku</p>
-                <div class="font-text">Hello</div>
-            </div>
-            <div class="grid-item">
-                <h3 class="font-name">Roboto</h3>
-                <p class="font-author">Son Goku</p>
-                <div class="font-text">Hello</div>
-            </div>
-        </section>
-        <footer id="footer">
-            <span>Coded by Amardeepsingh</span>
-            <span>2020</span>
-            <span>chingu-solo-project</span>
-        </footer>
+            <footer id="footer">
+                <span>Coded by Amardeepsingh</span>
+                <span>2020</span>
+                <span>chingu-solo-project</span>
+            </footer>
+        </div>
+
+        <script src="../scripts/app.js" ></script>
     </body>
 </html>
