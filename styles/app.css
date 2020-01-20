@@ -29,6 +29,10 @@ html, body {
     color: var(--text-color);
 }
 
+.btn:hover {
+    color: green;
+}
+
 .btn-circle {
     border: 1px solid var(--text-color);
 }
@@ -47,8 +51,16 @@ html, body {
     color: var(--text-color);
 }
 
+.link:hover {
+    color: red;
+}
+
 input::placeholder {
     color: var(--text-color);
+}
+
+input:focus {
+    border: 2px solid rgb(238, 238, 106);;
 }
 
 /* header styles */
@@ -86,12 +98,17 @@ input::placeholder {
     margin: 0 auto;
 }
 
-.navbar > input {
+input {
     border: none;
     border-right: 1px solid var(--text-color);
     outline: none;
     background: var(--background-color);
     color: var(--text-color);
+    padding: 3px;
+}
+
+input:focus {
+    border: 2px solid rgb(238, 238, 106);
 }
 
 .btn-dropdown {
