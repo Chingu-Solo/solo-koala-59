@@ -1,4 +1,4 @@
-const defaultExampleText = "WooHoo, This is so much fun!!";
+const defaultExampleText = "Then came the night of the first falling star";
 const defaultFontSize = "24px";
 
 const viewModes = {
@@ -6,9 +6,25 @@ const viewModes = {
     LIST: 'List'
 };
 
+const fontCollection = [
+    {name: 'Gelasio', author: 'Eben Sorkin', fontFamily: `'Gelasio', serif`},
+    {name: 'Bangers', author: 'Vernon Adams', fontFamily: `'Bangers', cursive`},
+    {name: 'Ubuntu', author: 'Dalton Maag', fontFamily: `'Ubuntu', sans-serif`},
+    {name: 'Open Sans Condensed', author: 'Steve Matteson', fontFamily: `'Open Sans Condensed', sans-serif`},
+    {name: 'Roboto Slab', author: 'Christian Robertson', fontFamily: `'Roboto Slab', serif`},
+    {name: 'Nunito', author: 'Vernon Adams', fontFamily: `'Nunito', sans-serif`},
+    {name: 'Inconsolata', author: 'Raph Levein', fontFamily: `'Inconsolata', monospace`},
+    {name: 'Indie Flower', author: 'Kimberly Geswein', fontFamily: `'Indie Flower', cursive`},
+    {name: 'Dancing Script', author: 'Impallari Type', fontFamily: `'Dancing Script', cursive`},
+    {name: 'Pacifico', author: 'Vernon Adams, Jacques Le Bailly, Botjo Nikoltchev, Ani Petrova', fontFamily: `'Pacifico', cursive`},
+    {name: 'Shadows Into Light', author: 'Kimberly Geswein', fontFamily: `'Shadows Into Light', cursive`},
+    {name: 'Amatic SC', author: 'Vernon Adams, Ben Nathan, Thomas Jockin, Cyreal', fontFamily: `'Amatic SC', cursive`},
+];
+
 let currentGridViewMode;
 
 // Initialize UI
+buildGrid();
 resetFontTextInput();
 resetFontSizeDropDown();
 resetViewMode();
@@ -84,4 +100,29 @@ function updateFontText(updateAction) {
     for (let i = 0; i < fontTextElements.length; i++) {
         updateAction(fontTextElements[i]);
     }
+}
+
+function buildGrid() {
+    const gridContainer = document.getElementById("grid-container");
+
+    fontCollection.forEach(font => {
+        const gridItemEle = document.createElement("div");
+        gridItemEle.className = "grid-item";
+        const fontNameEle = document.createElement("h3");
+        fontNameEle.className = "font-name";
+        fontNameEle.innerText = font.name;
+        fontNameEle.style.fontFamily = font.fontFamily;
+        const fontAuthorEle = document.createElement("p");
+        fontAuthorEle.className = "font-author";
+        fontAuthorEle.innerText = font.author;
+        const fontTextEle = document.createElement("p");
+        fontTextEle.className = "font-text";
+        fontTextEle.style.fontFamily = font.fontFamily;
+
+        gridItemEle.appendChild(fontNameEle);
+        gridItemEle.appendChild(fontAuthorEle);
+        gridItemEle.appendChild(fontTextEle);
+
+        gridContainer.appendChild(gridItemEle);
+    });
 }
